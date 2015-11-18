@@ -22,7 +22,7 @@
 
     <script type="text/javascript" src="common/tabletop.js"></script>
     <script type="text/javascript" src="common/handlebars.js"></script>
-		<script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
 
     <script type="text/javascript" src="../src/mapsheet.js"></script>
 
@@ -41,14 +41,14 @@
 			
       function init() {
         Mapsheet( { key: public_spreadsheet_url,
-											element: "map",
-											popupTemplate: "popup-template",
-											provider: Mapsheet.Providers.Leaflet,
-											markerOptions: {
-										    iconSize:   [32, 37], 
-										    iconAnchor:   [16, 37]
-											}
-				});
+		element: "map",
+		popupTemplate: "popup-template",
+		provider: Mapsheet.Providers.Leaflet,
+		markerOptions: {
+			iconSize:   [32, 37], 
+			iconAnchor:   [16, 37]
+				}
+	});
       }
 
       document.write("The published spreadsheet is whack and located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
